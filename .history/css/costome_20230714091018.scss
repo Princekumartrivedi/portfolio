@@ -1,0 +1,830 @@
+/* annie-use-your-telescope-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Annie Use Your Telescope";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/annie-use-your-telescope-v18-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/akshar-v9-latin-300.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/akshar-v9-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/akshar-v9-latin-500.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/akshar-v9-latin-600.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Akshar";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/akshar-v9-latin-700.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* im-fell-english-sc-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "IM Fell English SC";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/im-fell-english-sc-v16-latin-regular.woff2") format("woff2");
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ==================================================================================================================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------Root--------------------------------------- */
+
+:root {
+    --viobg: #823dcc;
+    --whitebg: #ffffff;
+    --viocolor: #823dcc;
+    --whitecolor: #ffffff;
+    --blackcolor: #222;
+    --dataoverly: #03030e;
+    --magentabg: magenta;
+    --magentatxt: magenta;
+}
+
+/* --------------------------------------------------------------- */
+
+/* ---------------------Defoult CSS------------------------------------ */
+html {
+    scroll-behavior: smooth;
+    transition: 5s;
+    text-rendering: optimizeLegibility !important;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    font-family: "Akshar";
+    font-weight: 400;
+    color: var(--theme-dark);
+    font-size: 14px;
+    word-break: break-all;
+
+    // overflow: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "IM Fell English SC";
+}
+
+.text-6xl {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Akshar";
+}
+
+.letterspace2 {
+    letter-spacing: 2px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.color24 {
+    color: #242424;
+}
+
+.color4b {
+    color: #4b4741;
+}
+
+.color77 {
+    color: #777777;
+}
+
+.colord {
+    color: #dddddd;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb80 {
+    margin-bottom: 80px;
+}
+
+.pb80 {
+    padding-bottom: 80px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.f22 {
+    font-style: 22px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.white-theme {
+    background-color: var(--whitebg);
+    color: var(--blackcolor);
+}
+
+.whitemagenta-theme {
+    background-color: var(--whitebg);
+    color: var(--magentatxt);
+}
+
+.magenta-theme {
+    background-color: var(--magentabg);
+    color: var(--whitecolor);
+}
+
+.magenta-bg {
+    background-color: var(--magentabg);
+}
+
+.text-magenta {
+    color: #823dcc;
+}
+
+.headingtext1 {
+    font-size: 40px !important;
+    line-height: 1.4;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+.section-color{
+    background: #f6f7fe;
+}
+
+span,
+a,
+a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+small {
+    font-family: "Annie Use Your Telescope";
+}
+
+p {
+    font-family: "Annie Use Your Telescope";
+
+    /* font-weight: 300; */
+    color: #777;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 16.5px;
+}
+
+/* .bi {
+    font-size: 40px;
+    color: var(--viocolor);
+    margin-bottom: 30pxx;
+} */
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.bggry {
+    background-color: #fbfbfb;
+}
+
+.half-padding {
+    padding: 120px 5%;
+}
+
+.lh1-8 {
+    line-height: 1.8;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* @media (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+} */
+
+/* -----------------------scrollbar Modify----------------------- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ---------------------------------------------------------- */
+
+.floder {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(244, 241, 241);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floder img {
+    width: 200px;
+    height: 200px;
+}
+
+/* -------------------------------- Navigation Bar ------------------------------------------- */
+
+/* -----------Navbar css------------------- */
+
+.nav-ul-class {
+    float: right;
+    height: 50px;
+}
+
+.nav-ul-class li {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.nav-ul-class li a {
+    /* padding: 25px 15px; */
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 13px;
+    display: block;
+}
+
+.nav-ul-class li .fa-solid {
+    font-size: 13px;
+    margin: 0 7px;
+}
+
+.nav-ul-class li {
+    text-transform: uppercase;
+}
+
+.head-start {
+    width: 100%;
+    /* min-height: 70px !important; */
+
+    background-color: rgba(0, 0, 0, 0.33);
+
+    z-index: 1000;
+    /* z-index: 10; */
+    position: absolute;
+}
+
+.span-li {
+    width: 20px;
+    line-height: 19px;
+    height: 20px;
+    color: black;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #f9c56a;
+    border-radius: 50%;
+}
+
+.logo {
+    /* padding: 18px 0; */
+    float: left;
+    max-width: 140px;
+    height: 50px;
+    line-height: 20px;
+}
+
+.tgl_btn .fa-bars {
+    font-size: 20px !important;
+    color: var(--whitecolor);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.btnvio:hover {
+    background-color: #823dcc;
+    background-position: right center;
+}
+
+.btnwht:hover {
+    background-color: var(--whitebg);
+    color: var(--viocolor);
+}
+
+.btn {
+    transition: 0.4s;
+    background-size: 200% auto;
+}
+
+.btn a:hover {
+    padding: 10px;
+    color: white;
+}
+
+.tgl-ul-class li {
+    padding: 9px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tgl-ul-class {
+    z-index: 999;
+}
+
+.w-100 {
+    z-index: 1;
+}
+
+// ------------------Nav Css end ------------------------------
+
+/* ------------------Header Css------------------- */
+.wz
+{
+    z-index: 99;
+}
+.head-img {
+    background-size: cover;
+    height: 100vh;
+    background-image: url(https://wallpaperaccess.com/full/1657858.jpg);
+    position: relative;
+
+    width: 100%;
+    // object-fit: cover;
+    // background-position: center;
+    /*background-position:0 940px;
+    background-image: url(../img/portgif.gif);*/
+    z-index: -1;
+}
+
+.head-pere {
+    position: relative;
+}
+
+.head-caption {
+    position: absolute;
+    /* z-index: 100; */
+    /* top: 15%; */
+    bottom: 40%;
+    left: 0%;
+    /* right: 8%; */
+}
+
+.head-caption .text-6xl {
+    font-size: 72px;
+    word-break: break-all;
+
+    /* font-size: calc(72px - 1vw); */
+}
+
+.home-prince {
+    filter: drop-shadow(2px 2px 5px black);
+}
+.scrolldwn {
+    position: relative;
+}
+
+.mouse-down {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -100px;
+}
+
+.typed {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+    word-break: break-all;
+}
+
+.typed::after {
+    content: "|";
+    display: inline;
+    font-weight: 900;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------------------- Header Css end -------------------------------- */
+
+// <!-- ============ About Section CSS START ====================-->
+// .About-section
+// {
+//     font-family: "Annie Use Your Telescope";
+//     overflow: scroll;
+
+// }
+
+// .about-img
+// {
+//     filter: drop-shadow(2px 2px 2px rgb(255, 255, 255));
+//     // height: 500px;
+
+//     position: relative;
+
+// }
+// .about-img img
+// {
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .about-img::before
+// {
+//     content: '';
+
+//     position: absolute;
+
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//         // background: url("/img/shap.png");
+//         height: 100%;
+//         // background: url("https://i.postimg.cc/xC1RKfRH/splash.jpg") no-repeat;
+//         background: url("https://cdnblog.webkul.com/blog/wp-content/uploads/2018/06/shape1.jpg");
+//         // background-image: url(/img/shape-png-freepic-149.png);
+//         background-size: 100% 100%;
+//         background-position: center;
+//         mix-blend-mode:screen;
+//         // background-position: 0 -200px;
+
+// }
+
+.about-image {
+    position: relative;
+    z-index: 1;
+    height: 450px;
+}
+.about-image img {
+    border-radius: 8px;
+    margin-top: 25px;
+    max-width: 450px;
+    height: 100%;   
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 0px 2px black);
+
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    // width: 495px !important;
+
+    width: 330px;
+    border-radius: 8px;
+    height: 330px;
+    background: #caa847;
+    z-index: -1;
+}
+
+.about-content h3 {
+    // font-family: "IM Fell English SC";
+    font-family: "akshar";
+}
+.about-content {
+    h3 {
+        span {
+            color: #caa847;
+        }
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #333;
+    }
+}
+.about-profile {
+    position: relative;
+    margin: 20px 0 20px 0;
+    font-size: 17px;
+}
+.about-profile .pro-title {
+    font-weight: 700;
+    position: relative;
+    width: 128px;
+    display: inline-block;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+.about-profile .pro-title:after {
+    position: absolute;
+    content: ':';
+    color: #ff0000;
+    word-break: break-all;
+    font-size: 14px;
+    left: 88px;
+}
+
+
+
+.section-title {
+    color: #000000;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.section-title:after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/iconpng.png);
+    background-size: contain;
+    padding: 43px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    top: -25px;
+    right: 0;
+}
+.flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.services-item {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 50px 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: 1s;
+}
+.services-item:hover
+{
+    box-shadow: 0px 0px 20px rgb(165, 165, 165);
+}
+
+.services-item .icon {
+    background: url(../img/pngbackgroundicon.svg) no-repeat;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+}
+.services-item .services-content h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.services-item .services-content p {
+    line-height: 22px;
+    font-weight: bold;
+}
+.timeline-item {
+    position: relative;
+    padding: 15px 20px 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #f6f7fe;
+    border-left: 2px solid #caa847;
+    transition: 0.3s ease-in-out;
+}
+.timeline-item:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -29px;
+    border: 2px solid #caa847;
+    z-index: 2;
+}
+
+// <!-- ============ About Section CSS End ====================-->
+
+
+
+// =============================== HOBBY =========================================================
+
+
+
+
+
+// <!-- ============ Education Section CSS End ====================-->
+
+#Education .block-title h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+.timeline {
+    border-left: 1px solid #caa847;
+    padding: 15px 0;
+}
+
+
+// <!-- ============ Education Section CSS End ====================-->
+
+
+
+
+// ============== Carosel Testimonial Start ============================
+
+.testimonial .qote i {
+    font-size: 40px;
+    margin: 15px 0;
+    color: #caa847;
+}
+.fa-quote-left:before {
+    content: "\f10d";
+}
+
+
+
+
+
+// ============== Carosel Testimonial Start ============================
+
+/* =============================================================================================================== */
+
+@keyframes filling {
+    from {
+        background-position: center 25%;
+    }
+
+    to {
+        background-position: center 50%;
+    }
+}
+
+.container-text {
+    background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 170px;
+    font-family: "Bungee";
+    animation: filling 3s ease forwards;
+}
+#particles-js
+{
+   z-index: 1;
+}
+
+/* ==================================================================================================== */
+

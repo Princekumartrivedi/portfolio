@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+
+    <link rel="icon" href="./img/titlelogo.png">
+
+    <!-- bootstrap css file -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+
+    <!-- fontawesome css file -->
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- media query css file -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- Animate css file -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!--  Loading io File -->
+    <link rel="stylesheet" href="/css/loading-bar.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- <div class="floder "> -->
+    <!-- <img src="img/myg.svg " alt=""> -->
+    <!-- <div class="ldBar"></div> -->
+    <!-- </div> -->
+
+
+
+
+    <main>
+        <!--==== Navigation Section Div =====-->
+        <nav class="position-fixed w-100 magenta-theme">
+            <div class="head-start m-auto position-relative">
+
+                <div class="container py-2 px-0 align-items-center ">
+                    <div class="row g-0 align-items-center justify-content-between flex-nowrap ">
+                        <div class="col-auto">
+                            <div class="logo">
+                                <a href="index.html sitelogo">
+                                    <img src="./img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-lg-block z-3">
+                            <nav class="">
+                                <ul class="list-unstyled d-flex  nav-ul-class">
+                                    <li class="nav-item active"><a href="#home">Home</a></li>
+                                    <li class="nav-item"><a href="#Aboutme">About Me </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#Hobby">Hobby</a></li>
+                                    <li class="nav-item"><a href="#Education">Education </a>
+                                    </li>
+                                    <li class="nav-item"><a href="#Projects">My Projects</a></li>
+                                    <li class="nav-item"><a href="#blog">Blog </a>
+                                    <li class="nav-item"><a href="#contact">Contact </a>
+                                    </li>
+
+
+
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-auto d-lg-none d-md-block">
+                            <button class="tgl_btn active">
+                                <i class="fa-solid fa-bars fs-2"></i>
+                            </button>
+                        </div>
+                        <div class=" position-absolute top-100 start-0 w-100 ">
+                            <ul class="tgl-ul-class bg-dark d-md-none">
+                                <li class="nav-item active"><a href="#home">Home</a></li>
+                                <li class="nav-item"><a href="#Aboutme">About Me</a></li>
+                                <li class="nav-item"><a href="#Hobby">Hobby</a></li>
+                                <li class="nav-item"><a href="#Education">Education</a></li>
+                                <li class="nav-item"><a href="#Projects">My Projects</a></li>
+                                <li class="nav-item"><a href="#blog">Blog</a></li>
+
+                                <li class="nav-item"><a href="#contact">Contact</a></li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- ========================---Nav End---========================== -->
+
+        <!-- ============ Home Section Start =============== -->
+        <section id="home" class="home-section">
+            <div class="head-pere vio-theme">
+
+            </div>
+
+
+            <div class="head-img position-relative d-none d-sm-block">
+
+            </div>
+
+            <header>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center row justify-content-center align-content-top head-caption m-0 ">
+                            <div class="photo wow animate__zoomIn"  data-wow-duration="5s" style="width: 300px;">
+                                <img src="img/editphon.jpg" alt="" style="border-radius: 50%;">
+                            </div>
+                            <h1 class="text-6xl text-magenta wow animate__jackInTheBox"  data-wow-duration="2s" >Welcome <br class="wow animate__jackInTheBox"data-wow-duration="2s"> To My World </h1>
+                            <p class="text-white mt-4 fs-5" data-wow-duration="2s"><a href="">Scroll Down</a></p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            </div>
+        </section>
+
+
+
+
+        <!-- ============ Home Section End =============== -->
+
+
+        <section class="">
+            <h1>
+                I AM <span class="typed"></span>
+            </h1>
+        </section>
+
+        <nav>
+            
+        </nav>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- -------------------- Scripts ----------------------- -->
+
+
+
+
+
+    <!-- -------------------jquery-------------- -->
+
+
+
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+
+
+    <!-- ---------------------Wow js---------------- -->
+
+    <script src="js/wow.min.js"></script>
+
+    <!--------------------- bootstarp js --------------------->
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!------------------ Typed Js ---------------------------->
+
+    <script src="js/typed.min.js"></script>
+
+    <!------------------- Loading Io js File ---------------->
+    <script src="js/loading-bar.min.js"></script>
+
+
+    <!-- ------------- OWl js------------------- -->
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.tgl-ul-class').hide();
+
+
+            $('.tgl_btn').click(function () {
+                $('.tgl-ul-class').slideToggle(350);
+                $('.tgl_btn i').toggleClass('fa-bars fa-bars');
+            })
+
+            //  $('.tgl-ul-class li a').click(function(){
+            //       $(this).siblings('.mob_sub_menu').slideToggle();
+            //  })
+
+            //  $('.mob_sub_menu li a').click(function(){
+            //       $(this).siblings('.mob_peta_menu').slideToggle();
+            //  })
+
+
+
+            // Floder JS-------------------------------------------
+            // $('main').hide()
+            // setTimeout(function () {
+            //     $('.floder').fadeOut(750);
+            //     $('main').show()
+            // }, 3000)
+        })
+
+        // -----------Wow JS 👇👇👇👇
+        new WOW().init();
+
+
+        // typed js
+        $(".typed").typed({
+            strings: ["JANAK", "WEB DESIGNER", "DEVELOPER", "CODER"],
+            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 30,
+            // time before typing starts
+            startDelay: 1200,
+            // backspacing speed
+            backSpeed: 20,
+            // time before backspacing
+            backDelay: 500,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: false,
+            // character for cursor
+            cursorChar: "||",
+            // attribute to type (null == text)
+            attr: null,
+            // either html or text
+            contentType: 'html',
+            // call when done callback function
+            callback: function () {},
+            // starting callback function before each string
+            preStringTyped: function () {},
+            //callback for every typed string
+            onStringTyped: function () {},
+            // callback for reset
+            resetCallback: function () {}
+        });
+
+    </script>
+
+
+    <!-- =========Wow js========== -->
+
+
+
+</body>
+
+</html>

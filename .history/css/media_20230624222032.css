@@ -1,0 +1,44 @@
+ /* @media(max-width: 380px) {
+     .caption-head .log img {
+         height: 10px
+     }
+
+     .home .tittle-block h1 {
+         font-size: 42px
+     }
+
+     .home .tittle-block h2 {
+         font-size: 24px
+     }
+ }
+ */
+
+
+
+/* 
+ @media (min-width: 768px){
+  .a2img {
+     width: 50%;
+ }
+ } */
+
+/* 
+
+
+ @media (max-width: 1200px) {
+     .container {
+         width: 1170px;
+     }
+ }
+
+ @media (min-width: 992px) {
+     .container {
+         width: 970px;
+     }
+ }
+
+ @media (min-width: 768px) {
+     .container {
+         width: 750px;
+     }
+ }  */
